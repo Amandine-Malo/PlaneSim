@@ -1,18 +1,16 @@
 #ifndef _POMPE_H
 #define _POMPE_H
 
-#include <iostring>
-#include "Tank.h"
+#include <iostream>
+using namespace std;
 
-class Pompe : public Tank{
+class Pompe {
 	private :
-		
+		bool etat;
 	public :
-			Pompe();
+			Pompe(); //initialisé en arrêt
+			Pompe(bool x);
 			~Pompe();
-			
-			virtual void start();
-			virtual void stop();
-}
+};
 
 #endif
