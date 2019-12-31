@@ -13,6 +13,8 @@ class Tank {
 	public :
 			Tank();
 			~Tank();
+			
+			
 };
 
 #endif

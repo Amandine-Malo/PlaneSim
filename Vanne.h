@@ -1,15 +1,23 @@
 #ifndef _VANNE_H
 #define _VANNE_H
 
-#include <iostring>
+#include <iostream>
+using namespace std;
 
-template<typename T>	
+#include "Tank.h"
+#include "Moteur.h"
+
 class Vanne {
 	private :
-		int etat; // 1 : marche, 0 : arrêt
+		int etat; // 1 : marche, 0 : arrêt, -1 : panne
+		Tank t1,t2;
+		Moteur m;
 	public :
 			Vanne();
+			Vanne(int);
+			Vanne(Tank, Moteur);
+			Vanne(Tank, Tank);
 			~Vanne();
-}
+};
 
 #endif

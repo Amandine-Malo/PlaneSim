@@ -9,6 +9,6 @@ class Utilisateur {
 	public :
 		Utilisateur();
 		~Utilisateur();
-}
+};
 
 #endif

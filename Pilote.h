@@ -9,6 +9,6 @@ class Pilote {
 	public :
 		Pilote();
 		~Pilote();
-}
+};
 
 #endif
